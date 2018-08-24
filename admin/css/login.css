@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+/*reset*/
+*{margin:0; padding:0;}
+body {text-align:left; color:#333; font:12px/24px tahoma,arial,微软雅黑;}
+h1, h2, h3, h4, h5, h6, ul, ol, dl {font-weight:normal;font-size:12px;}
+ol, ul {list-style: none;}
+select,input[type="submit"],input[type="button"],button{cursor:pointer;}
+img {border:0; margin:0;}
+textarea {overflow:auto;}
+em{font-style:normal; font-size:12px;}
+
+.clearfix:after{clear:both; content:"."; display:block; height:0; overflow:hidden; font-size:0; }
+.clear {clear:both;}
+
+a{color:#333;}
+a:link,a:visited{text-decoration:none}
+/*a:hover {text-decoration:underline;}*/
+a *{cursor: pointer}
+a img{border:none}
+select, input, button {vertical-align:middle}
+body img.valign{vertical-align:middle}
+em{font-style:normal}
+.left {float: left;}
+.right {float: right;}
+html,body{
+	width: 100%;
+	height: 100%;
+	background: url(../img/admin-login-bg.jpg)no-repeat center center;
+	background-size:100% 100%;
+	font-family:PingFang;
+}
+.loading{
+	width: 520px;
+	height: 450px;
+	background: rgba(253,253,253,0.1);
+	position: absolute;
+	text-align: center;
+	left:0;
+	right:0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.loading h1,span{
+	color: #f57c5a;
+}
+.loading h1{
+	font-size: 36px;
+	line-height: 40px;
+	margin-top: 25px;
+}
+.loading span{
+	font-size: 18px;	
+}
+.ShopLoad{
+	width: 428px;
+	height: 54px;
+	margin: 0px auto;
+	border: 1px solid #dfe2e2;
+	border-radius: 5px;
+	margin-top: 20px;
+	position: relative;
+}
+.addborder{
+	border-color: #efded7;
+}
+.ShopLoad img{
+	display: block;
+    position: absolute;
+    left: 12px;
+    /* right: 0; */
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.ShopLoad input[type="text"]{
+    position: absolute;
+    left: 38px;
+    /* right: 0; */
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 25px;
+    width: 85%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.ShopLoad input[type="password"]{
+	position: absolute;
+	left: 38px;
+	/* right: 0; */
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 25px;
+	width: 85%;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 18px;
+}
+
+.ShopLoad input[class="InputCode"]{
+	position: absolute;
+	left: 38px;
+	/* right: 0; */
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 25px;
+	width: 70%;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 18px;
+}
+
+.showCode{
+	height: 43px;
+	width: 90px;
+	font-style: normal;
+	font-size: 24px;
+	float:right;
+	padding-top: 10px;
+	background-color: #f68062;
+	color: white;
+}
+.subtns{
+	width: 428px;
+    height: 54px;
+    background: #f68062;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 54px;
+    margin: 0px auto;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+

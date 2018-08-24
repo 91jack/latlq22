@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../css/login.css"/>
+    <title>用户登陆</title>
+</head>
+<body>
+<div class="loading">
+    <h1>优职快聘后台管理系统</h1>
+    <span>YZKP back-stage managemen</span>
+    <div class="ShopLoad userload">
+        <img src="../img/Load_ico_03.png"/>
+        <input id="userName" type="text" placeholder="请输入账号"/>
+    </div>
+
+    <div class="ShopLoad userpassword">
+        <img src="../img/Load_ico_06.png"/>
+        <input id="password" type="password" placeholder="请输入密码"/>
+    </div>
+    <div class="ShopLoad">
+        <input id="yzm" class="InputCode" maxlength="4" type="text" placeholder="输入验证码"/>
+        <div>
+            <p id="code" class="showCode"></p>
+        </div>
+    </div>
+
+    <button id="btn-login" class="subtns">登陆</button>
+</div>
+
+ <script src="../../layuiadmin/layui/layui.js"></script>  
+ <script>
+  layui.config({
+    base: '../../layuiadmin/' //静态资源所在路径
+  }).extend({
+    index: 'lib/index' //主入口模块
+  }).use(['index', 'login']);
+  </script>
+<script>
+
+</script>
+</body>
+</html>
