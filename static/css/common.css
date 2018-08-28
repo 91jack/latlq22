@@ -1,0 +1,40 @@
+.bg-f5f5f5 {
+	background: #f5f5f5;
+}
+
+/*顶部导航*/
+header {
+	height:110px;
+	background:#fff;
+	margin: 0 70px;
+}
+@media (min-width: 768px)
+.navbar {
+    border-radius: 0;
+}
+.navbar {
+    position: relative;
+    min-height: 110px;
+    margin-bottom: 0;
+    border: none;
+}
+.navbar-default {
+	background: #fff;
+	border:none;
+}
+.navbar-brand {
+	height:110px;
+	padding:33px 0;
+}
+
+.navbar-brand img {
+	width:346px;
+	height:45px;
+}
+
+.navbar-nav>li>a {
+	padding: 0 15px;
+	line-height: 110px;
+	font-size:18px;
+	color:#666;
+}

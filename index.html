@@ -1,109 +1,146 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>重庆路安特沥青科技有限公司</title>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>重庆路安特沥青科技有限公司</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
-    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
-    <!--[if lt IE 9]>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="static/lib/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="static/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="static/css/index.css"/>
+		
+		<!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+		<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+		<!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-   	<header>
-   		<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-      	<img src="static/image/logo.png"/>
-      </a>
+	</head>
+
+	<body class="bg-f5f5f5">
+		<header>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header left">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+						<a class="navbar-brand" href="#"> <img src="static/images/logo.png" /> </a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"> <a href="#">公司首页 <span class="sr-only">(current)</span></a> </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">企业概况 <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li> <a href="#">公司简介 </a> </li>
+									<li> <a href="#">荣誉资质</a> </li>
+									<li> <a href="#">企业架构</a> </li>
+									<li> <a href="#">企业文化</a> </li>
+									<li> <a href="#">营销范围</a> </li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">资讯中心 <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li> <a href="#">新闻动态 </a> </li>
+									<li> <a href="#">行业动态</a> </li>
+									<li> <a href="#">员工风采</a> </li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">生产研发<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li> <a href="#">研发中心 </a> </li>
+									<li> <a href="#">生产基地</a> </li>
+									<li> <a href="#">生产设备</a> </li>
+								</ul>
+							</li>
+							<li> <a href="#">产品展示</a> </li>
+							<li> <a href="#">工程案例</a> </li>
+							<li> <a href="#">精英团队</a> </li>
+							<li> <a href="#">招贤纳士</a> </li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</header>
+		
+		<!--轮播图-->
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://www.yushangguoji.cn/d/file/industry/2018-08-13/eeb22d0b258476d6b9be5467f7cdea28.png" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
     </div>
+    <div class="item">
+      <img src="http://www.yushangguoji.cn/others/zt/bannerpenwu.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    
+  </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">网站首页 <span class="sr-only">(current)</span></a></li>
-      
-        <li><a href="#">新闻中心</a></li>
-        <li><a href="#">产品简介</a></li>
-        <li><a href="#">生产研发</a></li>
-        <li><a href="#">工程案例</a></li>
-        <li><a href="#">服务中心</a></li>
-          
-       
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">企业概况 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">企业简介 </a></li>
-            <li><a href="#">企业架构</a></li>
-            <li><a href="#">企业文化</a></li>
-            <li><a href="#">营销范围</a></li>
-          </ul>
-        </li>
-         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">新闻中心 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">行业动态 </a></li>
-            <li><a href="#">公司事件</a></li>
-            <li><a href="#">员工风采</a></li>
-          </ul>
-        </li>
-        
-         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品简介<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">企业简介 </a></li>
-            <li><a href="#">企业架构</a></li>
-            <li><a href="#">企业文化</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">营销范围</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-   	</header>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
-    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </body>
+
+		<!--公司简介-->
+		<div class="index-container company-intro">
+			<div class="row">
+				<div class="col-md-3 company-intro-img">
+					<a href="" class="thumbnail">
+						<img src="static/images/demo/company.png"/>
+					</a>
+				</div>
+				<div class="col-md-9 company-intro-text">
+					<h2>公司简介</h2>
+					庆路安特沥青科技有限公司（以下简称“路安特”）成立于二零零九年，是原深圳路安特沥青高新技术有限公司重庆分公司重组
+改制成立的，注册资本金3300万元，是一家集沥青、改性沥青、乳化沥青等高等级路面材料的研发、生产销售、及沥青仓储、
+贸易的一体化专业公司。公司主要产品有自主研发的SBS改性沥青稳定剂、SBS改性沥青、SBR改性沥青、橡胶粉改性沥青、岩
+沥青、乳化沥青、高粘度改性沥青等。公司管理通过ISO9001质量认证...
+				</div>
+			</div>
+		
+		</div>
+		
+		<footer>
+			
+		</footer>
+		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+		<script src="static/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
 </html>

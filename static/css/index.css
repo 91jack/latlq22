@@ -1,0 +1,21 @@
+
+/**/
+.index-container {
+	width:1546px;
+	margin: 100px auto;
+}
+
+/*公司简介*/
+.company-intro {
+	width:1546px;
+	height:344px;
+	padding:115px 0;
+	background: #fff;
+}
+.company-intro-img {
+	height:344px;
+	
+}
+.company-intro-text {
+	font-size:18px;
+}
