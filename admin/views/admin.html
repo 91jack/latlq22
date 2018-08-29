@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>layout 后台大布局 - Layui</title>
+<link rel="stylesheet" href="../src/layui/css/layui.css" media="all">
+<link rel="stylesheet" type="text/css" href="../css/admin.css"/>
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">layui 后台布局</div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="">控制台</a></li>
+      <li class="layui-nav-item"><a href="">商品管理</a></li>
+      <li class="layui-nav-item"><a href="">用户</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">其它系统</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">邮件管理</a></dd>
+          <dd><a href="">消息管理</a></dd>
+          <dd><a href="">授权管理</a></dd>
+        </dl>
+      </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+          贤心
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">基本资料</a></dd>
+          <dd><a href="">安全设置</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">退了</a></li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+	        <a href="javascript:;" lay-tips="应用" lay-direction="2">
+				<i class="layui-icon layui-icon-app"></i>
+				<cite>企业概况</cite>
+			</a>
+	        <dl class="layui-nav-child">
+				<dd>
+					<a data-url="app/message/index.html">公司简介</a>
+				</dd>
+				<dd>
+					<a data-url="app/workorder/list.html">资质荣誉</a>
+				</dd>
+				<dd>
+					<a data-url="app/worer/list.html">组织架构</a>
+				</dd>
+				<dd>
+					<a data-url="app/mge/index.html">营销范围</a>
+				</dd>
+				<dd data-name="forum">
+					<a href="javascript:;">发展历程</a>
+					<dl class="layui-nav-child">
+						<dd data-name="list">
+							<a data-url="app/forum/list.html">发布历程</a>
+						</dd>
+						<dd data-name="replys">
+							<a data-url="app/forum/replys.html">管理历程</a>
+						</dd>
+					</dl>
+				</dd>
+			</dl>
+        </li>
+        <li class="layui-nav-item">
+	        <a href="javascript:;" lay-tips="新闻资讯" lay-direction="2">
+				<i class="layui-icon layui-icon-user"></i>
+				<cite>新闻资讯</cite>
+			</a>
+			<dl class="layui-nav-child">
+				<dd>
+					<a data-url="user/user/list.html">发布资讯</a>
+				</dd>
+				<dd>
+					<a data-url="user/administrators/list.html">资讯列表</a>
+				</dd>
+				<dd>
+					<a data-url="user/administrators/role.html">资讯分类</a>
+				</dd>
+			</dl>
+        </li>
+       	<li class="layui-nav-item">
+				<a href="javascript:;" lay-tips="生产研发" lay-direction="2">
+					<i class="layui-icon layui-icon-user"></i>
+					<cite>生产研发</cite>
+				</a>
+				<dl class="layui-nav-child">
+					<dd>
+						<a data-url="user/user/list.html">研发中心</a>
+					</dd>
+					<dd>
+						<a data-url="user/administrators/list.html">生产基地</a>
+					</dd>
+					<dd>
+						<a data-url="user/administrators/role.html">生产设备</a>
+					</dd>
+				</dl>
+			</li>
+
+			<li  class="layui-nav-item">
+				<a href="javascript:;" lay-tips="用户" lay-direction="2">
+					<i class="layui-icon layui-icon-user"></i>
+					<cite>产品展示</cite>
+				</a>
+				<dl class="layui-nav-child">
+					<dd>
+						<a data-url="user/user/list.html">发布产品</a>
+					</dd>
+					<dd>
+						<a data-url="user/administrators/list.html">产品列表</a>
+					</dd>
+					<dd>
+						<a data-url="user/administrators/role.html">产品分类</a>
+					</dd>
+				</dl>
+			</li>
+
+			<li  class="layui-nav-item">
+				<a href="javascript:;" lay-tips="高级" lay-direction="2">
+					<i class="layui-icon layui-icon-senior"></i>
+					<cite>工程案例</cite>
+				</a>
+				<dl class="layui-nav-child">
+					<dd>
+						<a data-url="user/user/list.html">发布案例</a>
+					</dd>
+					<dd>
+						<a data-url="user/administrators/list.html">案例列表</a>
+					</dd>
+					<dd>
+						<a data-url="user/administrators/role.html">案例分类</a>
+					</dd>
+
+				</dl>
+			</li>
+			<li class="layui-nav-item">
+				<a href="javascript:;" lay-tips="团队风采" lay-direction="2">
+					<i class="layui-icon layui-icon-user"></i>
+					<cite>团队风采</cite>
+				</a>
+				<dl class="layui-nav-child">
+					<dd>
+						<a data-url="user/user/list.html">精英团队</a>
+					</dd>
+					<dd>
+						<a data-url="user/administrators/list.html">员工风采</a>
+					</dd>
+
+				</dl>
+			</li>
+
+			<li  class="layui-nav-item">
+				<a href="javascript:;" lay-tips="招贤纳士" lay-direction="2">
+					<i class="layui-icon layui-icon-set"></i>
+					<cite>招贤纳士</cite>
+				</a>
+				<dl class="layui-nav-child">
+					<dd>
+						<a data-url="recruit/post.html">发布招聘</a>
+					</dd>
+					<dd>
+						<a data-url="recruit/list.html">招聘列表</a>
+					</dd>
+				</dl>
+			</li>
+
+			<li  class="layui-nav-item">
+				<a href="javascript:;" lay-tips="网站设置" lay-direction="2">
+					<i class="layui-icon layui-icon-set"></i>
+					<cite>网站设置</cite>
+				</a>
+				<dl class="layui-nav-child">
+					<dd>
+						<a data-url="system/website.html">网站设置</a>
+					</dd>
+					<dd>
+						<a data-url="system/baseinfo.html">基本信息</a>
+					</dd>
+					<dd>
+						<a data-url="system/administrators.html">网站管理员</a>
+					</dd>
+					<dd>
+						<a data-url="system/password.html">修改密码</a>
+					</dd>
+				</dl>
+			</li>
+      </ul>
+    </div>
+  </div>
+  
+<!-- 主体内容 -->
+<div class="layui-body">
+	<div class="layadmin-tabsbody-item layui-show">
+		<iframe src="console.html"  name="ifre" frameborder="0" class="layadmin-iframe"></iframe>
+	</div>
+</div>
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+  </div>
+</div>
+<script src="../src/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../src/layui/layui.all.js"></script>
+<script type="text/javascript">
+	layui.use(['element','jquery'], function(){
+  var element = layui.element;
+  $ = layui.jquery;
+  $('.layui-nav-child a').on("click",function(){
+    var url=$(this).attr("data-url");
+    window.ifre.location.href=url;
+  });
+});
+</script>
+</body>
+</html>
