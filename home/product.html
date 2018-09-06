@@ -50,8 +50,8 @@
 		</div>
 		
 		<div class="banner">
-			<img src="static/images/banner/banner_news.png" alt="" />
-			<h1>资讯中心 Information</h1>
+			<img src="static/images/banner/banner_product.png" alt="" />
+			<h1>产品展示 Product </h1>
 		</div>
 		
 		<div class="container2 clearfix">
@@ -67,35 +67,51 @@
 					
 				</ul>
 			</div>
-			<div class="right-wrap2 fr">
-				<ul class="news-list">
-					<li>
-						<p>公司动态</p>
-					</li>
-					<li>
-						<a href="">
-							<h2 class="fl">关于扩大新疆库区生产</h2>
-							<span class="fr browse-num">
-								<img src="static/images/icon/icon_eye.png"/>
-								3000
-							</span>
-							<span class="fr">2018-09-08</span>
-						</a>
-					</li>
-				</ul>
+			<div class="right-wrap fr">
 				
-				<p class="page clearfix">
-					<span>&lt;</span>
-					<span>1</span>
-					<span>2</span>
-					<span>3</span>
-					<span>&gt;</span>
-				</p>
+				<a href="">
+					<img src="static/images/demo/produce2.png" alt="" />
+					<p>重交沥青</p>
+				</a>
+			
+				<a href="">
+					<img src="static/images/demo/produce2.png" alt="" />
+					<p>重交沥青</p>
+				</a>
+		
+				<a href="">
+					<img src="static/images/demo/produce2.png" alt="" />
+					<p>重交沥青</p>
+				</a>
+					
 			</div>
 		</div>
 		
-		<div class="footer">
+		
+		
+		<div class="footer clearfix">
+			<div class="container1">
+				<div class="company-msg fl">
+					<h2>重庆路安特沥青科技有限公司 </h2>
+					<div class="">
+						<p>地 址：重庆市北部新区黄山大道5号水星B座北翼2层2-8</p>
+						<p>邮 编： 401250</p>
+						<p>Q Q: 729207599</p>
+						<p>电话：023-86064652</p>
+						<p>传真：023-86064652</p>
+						<p>邮箱：cqlat@163.com</p>
+					</div>
+				</div>
+				<div class="fr wechat">
+					<img src="static/images/demo/wechat.png"/>
+					<p>企业微信</p>
+				</div>
+			</div>
 			
+		</div>
+		
+		<div class="footer2 clearfix">
+			<p>Copyright© 重庆路安特沥青科技有限公司</p>
 		</div>
 		
 	<script src="static/js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
@@ -106,6 +122,13 @@
 			//$(this).siblings().children('.dropdown-menu').slideUp();
 		},function(){
 			$(this).children('.dropdown-menu').slideUp();
+		})
+		
+		
+		$('.tab-btn a').click(function(){
+			var index = $(this).index();
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.tab-wrap-item').eq(index).show().siblings().hide();
 		})
 	</script>
 	</body>
