@@ -129,12 +129,135 @@ ul,ol,li{
 }
 h2 {
 	text-align: center;
-	font-size:1.7rem;
+	font-size:1.6rem;
+	color: #666;
+	margin-bottom: 2rem;
+}
+/*产品展示*/
+.index-product{
+	margin: 1rem auto;
+	background: #fff;
+}
+.index-product-wrap li {
+	float:left;
+	width:23rem;
+	height:27rem;
+	overflow: hidden;
+	margin-left: 0.65rem;
+	border-bottom: 0.05rem solid #E5E5E5;
+}
+.index-product-wrap li a img {
+	width:23rem;
+	height:21.5rem;
+}
+.index-product-wrap li a p {
+	line-height: 2rem;
+	
+	padding-left: 1rem;
+}
+.index-product-wrap li a p:first-child {
+	font-size: 1.1rem;
+	color: #4D4D4D;
+	margin-top: 1rem;
+}
+.index-product-wrap li a p:last-child {
+	font-size: 0.9rem;
 	color: #666;
 }
+
+/*新闻资讯*/
+.index-news {
+	width:100%;
+	background: #F5F5F5;
+	padding: 3rem 0;
+	overflow: hidden;
+}
+.index-newslist {
+	width:160.8rem;
+}
+.index-newslist li {
+	width:24.3rem;
+	float:left;
+	margin-right:2.5rem;
+}
+.index-newslist li a img {
+	width:25rem;
+	height:19rem;
+}
+.index-newslist li .news-info {
+	/*overflow: hidden;
+	padding: 0 1rem;*/
+	padding-top: 1rem;
+}
+.index-newslist li .news-info span {
+	display: inline-block;
+	width:4.15rem;
+	height:5rem;
+	float:left;
+	border-right:0.05rem solid #E5E5E5;
+	font-size: 0.7rem;
+	color: #ccc;
+	text-align: left;
+}
+.index-newslist li .news-info em{
+	display: block;
+	font-size: 1.1rem;
+	color: #666666;
+}
+.index-newslist li .news-info  div{
+	width:18.9rem;
+	padding: 0 0.5rem;
+}
+.index-newslist li a {
+	color:#333;
+	font-size:0.9rem;
+	
+}
+.index-newslist li .news-intro {
+	font-size: 0.9rem;
+	color: #999;
+}
+
+
+/*公司简介*/
+.index-company {
+	width:100%;
+	padding: 3rem 0;
+	overflow: hidden;
+	background: #fff;
+}
+.index-company .company-img {
+	width:23.6rem;
+	height:17.2rem;
+	margin-right: 2rem;
+}
+.index-company .company-img img {
+	width:100%;
+	height:100%;
+}
+
+.index-company .company-info {
+	width:50.4rem;
+}
+.index-company .company-info h2 {
+	text-align: left;
+}
+.index-company .conpany-content {
+	font-size: 0.9rem;
+	color: #999;
+	line-height: 2rem;
+}
+
+
+
+
+
+
+/*精英团队*/
 .index-team {
+	width:100%;
 	background:#F5F5F5;
-	padding: 1rem 0;
+	padding:3rem 0;
 	overflow: hidden;
 }
 .index-team-list {
